@@ -1,0 +1,20 @@
+pytest
+
+# Terminal
+
+- pip install pytest
+
+- pytest
+
+# if it has any test to run in the folder structure, it will test with the above command
+
+# every folder should have a single test_.py file to run specific tests
+
+# every test file should begin with test_ or finish with _test
+
+# To test a single function in a file, we need to write the file path, two colons and the function name
+- pytest test_shopping_cart.py::test_can_get_total_price
+
+# To show the function prints, we also write "-s" in the end of the line
+- pytest test_shopping_cart.py::test_can_get_total_price -s
+
